@@ -1,2 +1,3 @@
-# PixDoc
-Documentation related files for Pixel.
+# DoxyFormat
+
+Formatting files for Pixel's doxygen documentation generation.
