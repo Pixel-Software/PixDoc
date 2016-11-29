@@ -15,7 +15,8 @@
 //
 //==-----------------------------------------------------------------------==//
 
-
+var mainHeading = "h2";
+var subHeading  = "h3";
 
 $(document).ready(function(){
   $('.button-collapse').sideNav();
