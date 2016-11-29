@@ -271,6 +271,10 @@ $(document).ready(function(){
       item.addClass('card-action');
       item.removeClass('memdoc');
     });
+
+    $('.memtitle').each(function() {
+      (this).remove();
+    });
   }
 
   //== Table of Contents --------------------------------------------------==//
