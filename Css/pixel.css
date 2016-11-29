@@ -6510,6 +6510,7 @@ div.directory td.desc {
 
 div.contents {
   padding: 25px;
+  margin-right: 0px;
 }
 
 .iconlink {
@@ -6640,4 +6641,8 @@ span.mlabel {
 
 .paramtype {
   white-space: normal;
+}
+
+.collapsible-header:hover {
+  border-bottom: 2px solid #1c2f4f;
 }
