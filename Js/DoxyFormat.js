@@ -218,10 +218,13 @@ $(document).ready(function(){
 
   //==--- Detailed Modifications ------------------------------------------==//
 
-  if (currentUrl.search("struct") != -1 || currentUrl.search("class") != -1) {
+  if (currentUrl.search("struct") != -1 || 
+      currentUrl.search("class")  != -1 ||
+      currentUrl.search("hpp")    != -1 ||
+      currentUrl.search("cpp")    != -1) {
    
-  $('table.memname.highlighted').removeClass('highlighted');
-  $('table.mlabels.highlighted').removeClass('highlighted');
+    $('table.memname.highlighted').removeClass('highlighted');
+    $('table.mlabels.highlighted').removeClass('highlighted');
 
     $('.table').each(function() {
       var table = $(this);
@@ -235,22 +238,24 @@ $(document).ready(function(){
     var elements = header.nextUntil('h2');
     header.addClass('doxyH3');
 
-    // Make a card:
-    var newCard = 
-        "<div class='card z-depth-3'>"                                   +
-          "<div class='card-content'>"                                   +
-              "<span class='bold-card-title card-title'>"                +
-                header[0].innerHTML                                      +
-              "</span>"                                                  +
-          "</div>"                                                       +
-          "<div class='card-action'>";
+    if (header.length > 0) {
+      // Make a card:
+      var newCard = 
+          "<div class='card z-depth-3'>"                                   +
+            "<div class='card-content'>"                                   +
+                "<span class='bold-card-title card-title'>"                +
+                  header[0].innerHTML                                      +
+                "</span>"                                                  +
+            "</div>"                                                       +
+            "<div class='card-action'>";
 
-    // For each of the elements, add them to the card action:
-    for (var i = 0 ; i < elements.length; i++) {
-      newCard += elements[i].outerHTML;
+      // For each of the elements, add them to the card action:
+      for (var i = 0 ; i < elements.length; i++) {
+        newCard += elements[i].outerHTML;
+      }
+      newCard += "</div></div>";
+      header[0].parentElement.outerHTML = newCard;
     }
-    newCard += "</div></div>";
-    header[0].parentElement.outerHTML = newCard;
 
     $('a.el').addClass('tablelink');
 
