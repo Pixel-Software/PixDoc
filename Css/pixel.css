@@ -5135,14 +5135,14 @@ input[type=range]:focus::-ms-fill-upper {
   letter-spacing: .4;
   display: inline-block; }
   .table-of-contents a:hover {
-    color: #797979;
+    color: #1c2f4f;
     padding-left: 19px;
-    border-left: 2px solid #797979;
+    border-left: 3px solid #1c2f4f;
     height: inherit; }
   .table-of-contents a.active {
     font-weight: 500;
     padding-left: 18px;
-    border-left: 2px solid #797979; }
+    border-left: 3px solid #1c2f4f; }
 
 .side-nav {
   position: fixed;
