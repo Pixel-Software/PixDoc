@@ -291,7 +291,7 @@ $(document).ready(function(){
     }
     elem.addClass('striped');
     elem.removeClass('fieldtable');
-  }
+  });
 
   //== Table of Contents --------------------------------------------------==//
 
@@ -340,6 +340,14 @@ $(document).ready(function(){
 
   // Initialize the added elements:
   $('.collapsible').collapsible();
+
+  //== Code Formatting ----------------------------------------------------==//
+
+  $('div.line').replaceWith(function() {
+    return $("<span class='line'>" + this.innerHTML + "</span>");
+  });
+}
+
 });
 
 $(document.body).click(function() {
