@@ -346,8 +346,6 @@ $(document).ready(function(){
   $('div.line').replaceWith(function() {
     return $("<span class='line'>" + this.innerHTML + "</span>");
   });
-}
-
 });
 
 $(document.body).click(function() {
