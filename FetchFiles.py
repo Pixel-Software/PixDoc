@@ -28,4 +28,4 @@ os.mkdir('DoxyFormat')
 os.chdir('DoxyFormat')
 
 for key, val in urls.items():
-  subprocess.call(['wget', baseUrl + val])
+  subprocess.call(['wget', '--no-cache', baseUrl + val])
