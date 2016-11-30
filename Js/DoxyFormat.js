@@ -282,6 +282,17 @@ $(document).ready(function(){
     });
   }
 
+  //== Enumerations -------------------------------------------------------==//
+  
+  $('.fieldtable').each(function() {
+    var elem = $(this);
+    if (elem.hasClass('highlighted')) {
+      elem.removeClass('highlighted');
+    }
+    elem.addClass('striped');
+    elem.removeClass('fieldtable');
+  }
+
   //== Table of Contents --------------------------------------------------==//
 
   var tableOfContents = 
