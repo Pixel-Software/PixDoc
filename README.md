@@ -1,3 +1,3 @@
 # DoxyFormat
 
-Formatting files for Pixel's doxygen documentation generation.
+Formatting files for Voxel's doxygen documentation generation.
