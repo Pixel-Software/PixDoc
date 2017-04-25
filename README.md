@@ -23,3 +23,6 @@ sass files, and replacing the **stylesheet.css** file in this repository with
 the compiled modified scss files, custom looking Doxygen based on Google's
 material theme can be produced.
 
+A live demo of the look of documentation generated using these modifications can
+be found at: [Voxel docs](https://voxelated.github.io/libraries/voxel/index.html)
+
