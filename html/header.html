@@ -18,9 +18,15 @@
     <script type="text/javascript" src="$relpath^dynsections.js"></script>
     $treeview
     $mathjax
+
+    <!-- NOTE: We first load the doxygen stylesheet, and then we try and load the stylesheet of the site
+               to which this documentation will belong, and then we load the custom stylesheet
+      -->
     <link href="doxygen.css" rel="stylesheet" type="text/css"/>
+    <link href="/css/main.css" rel="stylesheet" type="text/css"/>
     <link href="$relpath^sytlesheet.css" rel="stylesheet" type="text/css"/>
-    $extrastylesheet
+
+    <!-- Load the javascript which converts the doxygen output to material style -->
     <script type="text/javascript" src="$relpath^DoxyFormat.js"></script>
   </head>
 
