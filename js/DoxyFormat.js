@@ -71,7 +71,7 @@ $(document).ready(function(){
 
   // Remove doxygen text block and add our own contents:
   $('.textblock').removeClass('textblock');
-  $('.contents').addClass("col s12 m8 l6 z-depth-2");
+  $('.contents').addClass("col s12 m8 l6");
   $('.contents').wrap("<div class='row'></div>");
   $('.contents').before("<div class='col s0 m2 l3'></div>");
   $('.contents').prepend(
